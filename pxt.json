@@ -1,0 +1,40 @@
+{
+    "name": "Chick and Monk + addon expation pack Turt",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll/",
+        "simple-blocks": "github:microsoft/arcade-tutorial-extensions/simple-blocks/",
+        "pxt-tilemaps": "github:microsoft/pxt-tilemaps/",
+        "multiplayer": "*",
+        "controller": "*",
+        "arcade-split-screen": "github:riknoll/arcade-split-screen#c932ef6b9f21320f2b6307dc01c75bbd8179b278",
+        "pxt-button-combos": "github:jwunderl/pxt-button-combos#v0.0.24"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts",
+        "pxt.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.12.21",
+        "tag": "v1.12.21",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/0cb2da5a909e7062f4a7611a9c2d9f35446a3657",
+        "target": "1.12.41",
+        "pxt": "8.5.29",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
