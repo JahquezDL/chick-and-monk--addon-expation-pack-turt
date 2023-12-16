@@ -1413,6 +1413,9 @@ info.player2.onLifeZero(function () {
         scene.cameraFollowSprite(Turtle)
     }
 })
+controller.player2.onEvent(ControllerEvent.Connected, function () {
+	
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`poison pit`, function (sprite, location) {
     if (Monkey == sprite) {
         info.changeLifeBy(-1)
@@ -1822,6 +1825,7 @@ let Turtle: Sprite = null
 let Chicken: Sprite = null
 let Monkey: Sprite = null
 let pixelsToMeters = 0
+music.play(music.createSong(assets.song`Theme song`), music.PlaybackMode.LoopingInBackground)
 game.setDialogFrame(img`
     ..................................................................
     ............fff........fff.............fff..............ffff......
@@ -1894,6 +1898,7 @@ game.setDialogCursor(assets.image`stand`)
 game.setDialogTextColor(2)
 game.splash("OH NO! Ape Tron has stolen your treasure YOU (MONK) Have to get it back with the help of Chick and Turt!!!")
 game.splash("Level 1 Tropics")
+music.stopAllSounds()
 pixelsToMeters = 30
 scene.setBackgroundImage(assets.image`background`)
 tiles.setTilemap(tilemap`level1`)
